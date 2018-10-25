@@ -141,4 +141,7 @@ Note the comments there - Grafana does not auto-start. Let’s set it up to auto
 
 > sudo systemctl start grafana-server
 
-Grafana is now listening on port 3000. Open a web browser, go to http://{VM_IP}:3000/ and login using the default username/password combo: admin/admin
+Grafana is now listening on port 3000. Open a web browser, go to http://192.168.1.241:3000/ and login using the default username/password combo: `admin/admin`
+
+![ ] (https://lkhill.com/assets/2017/11/first_screen.png)
+
