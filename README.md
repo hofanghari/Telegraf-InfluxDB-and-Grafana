@@ -92,3 +92,6 @@ My switch already has SNMP configured, but let’s quickly check it is behaving
 	      name = "ifDescr"
 	      oid = "IF-MIB::ifDescr"
 	      is_tag = true
+You can use the --test option to get Telegraf to grab one cycle of metrics, and publish them to stdout. This tells you that your configuration is sane, and capable of collecting data:
+
+> telegraf --test --config /etc/telegraf/telegraf.d/leaf1.conf
