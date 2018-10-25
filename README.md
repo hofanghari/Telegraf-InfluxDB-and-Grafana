@@ -92,7 +92,7 @@ My switch already has SNMP configured, but let’s quickly check it is behaving
 	      name = "ifDescr"
 	      oid = "IF-MIB::ifDescr"
 	      is_tag = true
-You can use the --test option to get Telegraf to grab one cycle of metrics, and publish them to stdout. This tells you that your configuration is sane, and capable of collecting data:
+You can use the `--test` option to get Telegraf to grab one cycle of metrics, and publish them to stdout. This tells you that your configuration is sane, and capable of collecting data:
 
 > telegraf --test --config /etc/telegraf/telegraf.d/leaf1.conf
 
@@ -123,12 +123,15 @@ After a couple of minutes, check to see if InfluxDB is storing results:
 	>exit
 
 http://docs.grafana.org/installation/debian/
-
-> echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
-
-> curl https://packagecloud.io/gpg.key | sudo apt-key add -
-
-> sudo apt update
-
-> sudo apt install grafana
-
+```
+echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
+curl https://packagecloud.io/gpg.key | sudo apt-key add -
+sudo apt update
+sudo apt install grafana
+```
+Note the comments there - Grafana does not auto-start. Let’s set it up to auto-start, and start it now:
+```
+sudo systemctl daemon-reload
+sudo systemctl enable grafana-server
+sudo systemctl start grafana-server
+```
