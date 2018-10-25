@@ -122,16 +122,23 @@ After a couple of minutes, check to see if InfluxDB is storing results:
 	InfluxDB shell version: 1.6.1
 	>exit
 
+## Grafana
 http://docs.grafana.org/installation/debian/
-```
-echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
-curl https://packagecloud.io/gpg.key | sudo apt-key add -
-sudo apt update
-sudo apt install grafana
-```
+
+> echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
+
+> curl https://packagecloud.io/gpg.key | sudo apt-key add -
+
+> sudo apt update
+
+> sudo apt install grafana
+
 Note the comments there - Grafana does not auto-start. Let’s set it up to auto-start, and start it now:
-```
-sudo systemctl daemon-reload
-sudo systemctl enable grafana-server
-sudo systemctl start grafana-server
-```
+
+> sudo systemctl daemon-reload
+
+> sudo systemctl enable grafana-server
+
+> sudo systemctl start grafana-server
+
+Grafana is now listening on port 3000. Open a web browser, go to http://{VM_IP}:3000/ and login using the default username/password combo: admin/admin
