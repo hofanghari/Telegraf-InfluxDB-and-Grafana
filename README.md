@@ -120,3 +120,16 @@ After a couple of minutes, check to see if InfluxDB is storing results:
 
 	Connected to http://localhost:8086 version 1.6.1
 	InfluxDB shell version: 1.6.1
+	>exit
+
+http://docs.grafana.org/installation/debian/
+
+> echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
+	
+	deb https://packagecloud.io/grafana/testing/debian/ stretch main
+> curl https://packagecloud.io/gpg.key | sudo apt-key add -
+
+	  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+					 Dload  Upload   Total   Spent    Left  Speed
+	100  3889  100  3889    0     0   4115      0 --:--:-- --:--:-- --:--:--  4115
+	OK
