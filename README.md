@@ -143,5 +143,16 @@ Note the comments there - Grafana does not auto-start. Let’s set it up to auto
 
 Grafana is now listening on port 3000. Open a web browser, go to http://192.168.1.241:3000/ and login using the default username/password combo: `admin/admin`
 
-![ ] (https://lkhill.com/assets/2017/11/first_screen.png)
+![image](https://lkhill.com/assets/2017/11/first_screen.png)
 
+Click on Add data source:
+
+![image](https://lkhill.com/assets/2017/11/add_data_source.png)
+
+Fill in these details:
+
+	Name: telegraf
+	Default: selected
+	Type: InfluxDB
+	HTTP settings: URL http://localhost:8086, Access: proxy
+	InfluxDB Details: Set Database to ‘telegraf’. No username/password.
