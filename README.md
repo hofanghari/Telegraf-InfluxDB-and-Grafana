@@ -1,17 +1,12 @@
 # Telegraf-InfluxDB-and-Grafana
 Telegraf, InfluxDB and Grafana monitor fo smartnet
 ## InfluxDB
-	>curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add - OK ubuntu@telegraf:~$ source /etc/lsb-release<
-
-echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list  
-
-deb https://repos.influxdata.com/ubuntu xenial stable 
-
-Sudo apt update 
-
-sudo apt install influxdb 
-
-sudo systemctl start influxdb 
+	>curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add - OK ubuntu@telegraf:~$ source /etc/lsb-release
+	>echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list  
+	>deb https://repos.influxdata.com/ubuntu xenial stable 
+	>sudo apt update 
+	>sudo apt install influxdb 
+	>sudo systemctl start influxdb <
 
   
 
