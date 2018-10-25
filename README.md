@@ -125,5 +125,10 @@ After a couple of minutes, check to see if InfluxDB is storing results:
 http://docs.grafana.org/installation/debian/
 
 > echo "deb https://packagecloud.io/grafana/stable/debian/ jessie main" | sudo tee /etc/apt/sources.list.d/grafana.list
+
 > curl https://packagecloud.io/gpg.key | sudo apt-key add -
+
+> sudo apt update
+
 > sudo apt install grafana
+
