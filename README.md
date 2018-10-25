@@ -26,6 +26,8 @@ https://lkhill.com/telegraf-influx-grafana-network-stats/
 	sudo nano /etc/snmp/snmp.conf 
 Note that last step there - I commented out the mibs: line in snmp.conf.
 
+My switch already has SNMP configured, but let’s quickly check it is behaving
+
 > snmpwalk -v 2c -c public 192.168.1.101 system
 
 	SNMPv2-MIB::sysDescr.0 = STRING: AOS-W Version 6.4.2.6-4.1.1.12
