@@ -15,15 +15,9 @@ Telegraf, InfluxDB and Grafana monitor fo smartnet
 	wget https://dl.influxdata.com/telegraf/releases/telegraf_1.8.2-1_amd64.deb 
 	sudo dpkg -I telegraf_1.8.2-1_amd64.deb 
 	sudo systemctl start telegraf 
+
 ## snmp snmp-mibs-downloader
  
-
- 
-
-> sudo apt install snmp snmp-mibs-downloader 
-
-sudo nano /etc/snmp/snmp.conf 
-
- 
-
+	sudo apt install snmp snmp-mibs-downloader 
+	sudo nano /etc/snmp/snmp.conf 
 Note that last step there - I commented out the mibs: line in snmp.conf.
