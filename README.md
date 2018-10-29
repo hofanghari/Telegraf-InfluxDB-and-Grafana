@@ -1,6 +1,6 @@
 # Telegraf-InfluxDB-and-Grafana
 Telegraf, InfluxDB and Grafana monitor fo smartnet
-
+https://github.com/vbarahona/wifiarubausers2grafana
 https://lkhill.com/telegraf-influx-grafana-network-stats/
 ## InfluxDB
 	curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add - OK ubuntu@telegraf:~$ source /etc/lsb-release
